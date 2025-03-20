@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hangman Game: FrontEnd Edition</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js" defer></script>
+    </head> 
+    <body>
+        <div class="game-modal">
+            <div class="content">
+                <img src="lost.gif" alt="gif">
+                <h4>Game Over!</h4>
+                <p>The correct word was: <b>style</b></p>
+                <button class="play-again">Play Again</button>
+            </div>
+        </div>
+        <div class="container">
+            <div class="hangman-box">
+                <div class="difficulty-select">
+                    <label for="difficulty">Select Difficulty:</label>
+                    <select id="difficulty-select">
+                        <option value="easy">Easy</option>
+                        <option value="medium">Medium</option>
+                        <option value="hard">Hard</option>
+                    </select>
+                </div>  
+                <br>
+                <br>
+                <img src="hangman-0.svg" alt="hangman-img">
+                <h1>JavaBad: <br> Hangman Game</h1>
+            </div>
+            <div class="game-box">
+                <ul class="word-display">
+                </ul>
+                <h4 class="hint-text">
+                    Hint:
+                    <b>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</b>
+                </h4>
+                <h4 class="guesses-text">
+                    Incorrect Guesses:
+                    <b>0 / 6</b>
+                </h4>
+                <div class="keyboard">
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
